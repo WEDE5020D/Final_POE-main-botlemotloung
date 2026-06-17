@@ -112,7 +112,7 @@ project-folder/
 - Added validation and an inline confirmation message to the Enquiry form
 - Added an id, fields, and JS validation to a new Contact form, which opens a pre-filled email to bakedwithlovebyreo@gmail.com on successful submission
 - Added a category filter feature to the Products page (All / Cakes / Cupcakes / Bread / Milk Tart / Donuts)
-- dded a gallery lightbox modal with keyboard (Escape) and click-outside support
+- Added a gallery lightbox modal with keyboard (Escape) and click-outside support
 - Added contact and gallery to fix missing headings
 - Added two embedded Google Maps to contact.html (store + delivery area)
 - Added a Home page CTA button linking to Products
