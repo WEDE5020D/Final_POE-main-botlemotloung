@@ -182,7 +182,11 @@ https://www.istockphoto.com/photo/cupcake-on-plate-gm651218846-118270105
 iStock. (2012) Contact us concept from a bakery. Available at: 
 https://www.istockphoto.com/photo/contact-us-concept-from-a-bakery-gm186163634-27610236 
 (Accessed: 20 March 2026).
-
+MDN Web Docs. 2026. JavaScript Guide. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide> [Accessed 25 March 2026].
+W3Schools. 2026. JavaScript Tutorial. [online] Available at: <https://www.w3schools.com/js/> [Accessed 25 March 2026].
+W3Schools. 2026. JavaScript Form Validation. [online] Available at: <https://www.w3schools.com/js/js_validation.asp> [Accessed 25 March 2026].
+MDN Web Docs. 2026. EventTarget: addEventListener() Method. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener> [Accessed 25 March 2026].
+MDN Web Docs. 2026. Document.querySelector(). [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector> [Accessed 25 March 2026].
 ## Conclusion
 The website for Baked With Love By Reo successfully meets the requirements
 for Parts 1 to 3 of the POE. An external CSS stylesheet was applied across
