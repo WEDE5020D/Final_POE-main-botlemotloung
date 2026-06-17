@@ -191,19 +191,24 @@ https://www.istockphoto.com/photo/cupcake-on-plate-gm651218846-118270105
 iStock. (2012) Contact us concept from a bakery. Available at: 
 https://www.istockphoto.com/photo/contact-us-concept-from-a-bakery-gm186163634-27610236 
 (Accessed: 20 March 2026).
-
+  
 ## Conclusion
-The website for Baked With Love By Reo successfully meets the requirements 
-for Part 2. An external CSS stylesheet was applied across all six pages, 
-providing a consistent pink and brown colour scheme throughout.
+The website for Baked With Love By Reo successfully meets the requirements
+for Parts 1 to 3 of the POE. An external CSS stylesheet was applied across
+all six pages, providing a consistent pink and brown colour scheme throughout.
 
-Flexbox was used for navigation and Grid for the products and gallery layouts. 
-Media queries ensure the site responds correctly on mobile, tablet, and desktop 
-screens. Accessibility was improved through alt text, aria attributes, hover 
+Flexbox was used for navigation and Grid for the products and gallery layouts.
+Media queries ensure the site responds correctly on mobile, tablet, and desktop
+screens. Accessibility was improved through alt text, aria attributes, hover
 and focus styles, and a consistent heading hierarchy.
 
-All HTML errors from Part 1 feedback have been corrected, references have been 
-updated to consistent Harvard format, and the changelog reflects the full 
+In Part 3, JavaScript validation was added to both the Enquiry and Contact
+forms, a product filter and gallery lightbox were added for interactivity,
+and SEO essentials (meta descriptions, robots.txt, sitemap.xml) were put in
+place ahead of deployment.
+
+All HTML errors from earlier feedback have been corrected, references have been
+updated to consistent Harvard format, and the changelog reflects the full
 development history of the project.
 
 ## Autograding Feedback
