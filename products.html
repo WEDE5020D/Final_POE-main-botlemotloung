@@ -1,69 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Services / Products | WEDE5020 POE Website</title>
 
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TODO: Write a short page description for search engines.">
-  <meta name="keywords" content="TODO, replace, with, relevant, keywords">
-  <meta name="author" content="Student Name">
+  <title>Product- Baked With Love By Reo</title>
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/main.js"></script>
-</head>
+  <script src="js/script.js" defer></script>
+
 <body>
-  <header class="site-header">
-    <div class="container header-layout">
-      <div>
-        <p class="site-tag">WEDE5020 POE Template</p>
-        <strong>[Organisation Name]</strong>
-      </div>
+  <!--
+  Student: Reoratile Motloung
+  Page: Products
+  Purpose: Display bakery products with an image  
+-->
 
-<nav aria-label="Primary">
-  <ul class="nav-list">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services / Products</a></li>
-    <li><a href="enquiry.html">Enquiry</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-    </div>
+  <header>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
   </header>
 
-    <main class="container">
-      <h1>Services / Products</h1>
-      <p>Use this page to describe the organisation's services or products.</p>
-
-      <section class="card-grid">
-        <article class="card searchable-item">
-          <h2>Service / Product 1</h2>
-          <p>Add a description, price range, and value to users.</p>
+  <!-- Product section -->
+  <main>
+    <!-- Product section -->
+    <section aria-labelledby="products-title">
+      <h1 id="products-title">Our Products</h1>
+      <div class="products">
+        <article class="product-card">
+          <img src="assets/images/products2.jpg" alt="Cakes">
+          <h2>Cakes</h2>
+          <p>Fresh vanilla Cake.</p>
+          <p><strong>From R150</strong></p>
+          <a href="enquiry.html">Enquire now</a>
         </article>
-        <article class="card searchable-item">
-          <h2>Service / Product 2</h2>
-          <p>Add a description, price range, and value to users.</p>
+        <article class="product-card">
+          <img src="assets/images/products3.jpg" alt="Cupcakes">
+          <h2>Cupcakes</h2>
+          <p>Party Cupcakes sold in box of 2 or more.</p>
+          <p><strong>From R30</strong></p>
+          <a href="enquiry.html">Enquire now</a>
         </article>
-        <article class="card searchable-item">
-          <h2>Service / Product 3</h2>
-          <p>Add a description, price range, and value to users.</p>
+        <article class="product-card">
+          <img src="assets/images/products1.jpg" alt="Bread">
+          <h2>Bread</h2>
+          <p>White Bread.</p>
+          <p><strong>From R20</strong></p>
+          <a href="enquiry.html">Enquire now</a>
         </article>
-      </section>
+        <article class="product-card">
+          <img src="assets/images/products4.jpg" alt="Milk Tart">
+          <h2>Milk Tart</h2>
+          <p>Milk Tart.</p>
+          <p><strong>From R50</strong></p>
+          <a href="enquiry.html">Enquire now</a>
+        </article>
+        <article class="product-card">
+          <img src="assets/images/products5.jpg" alt="Donuts">
+          <h2>Donuts</h2>
+          <p>Freshly baked donuts.</p>
+          <p><strong>From R15</strong></p>
+          <a href="enquiry.html">Enquire now</a>
+        </article>
+      </div>
+    </section>
+  </main>
 
-      <section>
-        <h2>Search Services / Products</h2>
-        <label for="search">Search</label>
-        <input id="search" type="search" placeholder="Search services or products">
-        <p class="small-text">Part 3 idea: add JavaScript to filter the cards above.</p>
-      </section>
-    </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 [Organisation Name]. All rights reserved.</p>
-      <p>Student Number: [Add student number]</p>
-    </div>
+  <footer>
+    <p>&copy; 2026 Baked With Love By Reo</p>
+    <address>40 Kellner Street, Westdene Bloemfontein</address>
   </footer>
+
 </body>
+
 </html>
