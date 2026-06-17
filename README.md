@@ -113,10 +113,10 @@ project-folder/
 - Added an id, fields, and JS validation to a new Contact form, which opens a pre-filled email to bakedwithlovebyreo@gmail.com on successful submission
 - Added a category filter feature to the Products page (All / Cakes / Cupcakes / Bread / Milk Tart / Donuts)
 - dded a gallery lightbox modal with keyboard (Escape) and click-outside support
-- Added a <h1>Contact Us</h1> and <h1>Our Gallery</h1> to fix missing headings
+- Added contact and gallery to fix missing headings
 - Added two embedded Google Maps to contact.html (store + delivery area)
 - Added a Home page CTA button linking to Products
-- Added unique <meta name="description"> tags to all six pages
+- Added unique tags to all six pages
 - Added Google Fonts link for Poppins so headings render in the intended typeface
 - Fixed "occassion" → "occasion" typo in about.html and gallery.html
 - Fixed inconsistent products.html title tag
