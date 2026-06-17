@@ -166,4 +166,67 @@ function initContactForm() {
 
 function initProductFilter() {
     var buttons = document.querySelectorAll('.filter-btn');
-    var cards =
+    var cards = document.querySelectorAll('.product-card');
+    if (!buttons.length || !cards.length) return;
+
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            buttons.forEach(function (b) { b.classList.remove('active'); });
+            button.classList.add('active');
+
+            var filter = button.getAttribute('data-filter');
+
+            cards.forEach(function (card) {
+                var matches = filter === 'all' || card.getAttribute('data-category') === filter;
+                card.classList.toggle('is-hidden', !matches);
+            });
+        });
+    });
+}
+
+/* -----------------------------------------------------------
+   Gallery lightbox (gallery.html)
+   ----------------------------------------------------------- */
+
+function initGalleryLightbox() {
+    var thumbs = document.querySelectorAll('.gallery-thumb');
+    var lightbox = document.getElementById('lightbox');
+    if (!thumbs.length || !lightbox) return;
+
+    var lightboxImg = document.getElementById('lightboxImg');
+    var lightboxCaption = document.getElementById('lightboxCaption');
+    var closeButton = document.getElementById('lightboxClose');
+
+    function openLightbox(thumb) {
+        lightboxImg.src = thumb.getAttribute('data-img');
+        lightboxImg.alt = thumb.getAttribute('data-caption') || '';
+        lightboxCaption.textContent = thumb.getAttribute('data-caption') || '';
+        lightbox.hidden = false;
+        closeButton.focus();
+    }
+
+    function closeLightbox() {
+        lightbox.hidden = true;
+        lightboxImg.src = '';
+    }
+
+    thumbs.forEach(function (thumb) {
+        thumb.addEventListener('click', function () {
+            openLightbox(thumb);
+        });
+    });
+
+    closeButton.addEventListener('click', closeLightbox);
+
+    lightbox.addEventListener('click', function (event) {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && !lightbox.hidden) {
+            closeLightbox();
+        }
+    });
+}
