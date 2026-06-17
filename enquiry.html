@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry-Baked with Love By Reo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--
+Student: Reoratile Motloung
+Page: Enquiry
+Purpose: Allow customers to enquire about bakery products   
+-->
+
+  <header>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Enquiry -->
+    <section>
+      <h1>Make an enquiry</h1>
+      <p>If you would like to order or ask about our baked goods, please complete the enquiry form below. Our team will
+        respond as soon as possible.</p>
+    </section>
+
+    <!-- Enquiry Introduction -->
+    <form>
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <label for="product">Product interest:</label><br>
+      <select id="product" name="product">
+        <option value="cake">Cakes</option>
+        <option value="cupcakes">Cupcakes</option>
+        <option value="bread">Bread</option>
+        <option value="milk tart">Milk Tart</option>
+        <option value="donuts">Donuts</option>
+      </select><br><br>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+      <button type="submit">Submit Enquiry</button>
+    </form>
+    <!-- Privacy Note -->
+    <p>Your information will be kept private and only used to respond to your enquiry</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Baked With Love By Reo</p>
+    <address>40 Kellner Street, Westdene Bloemfontein</address>
+  </footer>
+
+</body>
+
+</html
