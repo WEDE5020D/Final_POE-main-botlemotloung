@@ -193,3 +193,5 @@ place ahead of deployment.
 All HTML errors from earlier feedback have been corrected, references have been
 updated to consistent Harvard format, and the changelog reflects the full
 development history of the project.
+[sitemap](<sitemap POE.pdf>)
+[wireframe](<Wireframe POE.pdf>)
