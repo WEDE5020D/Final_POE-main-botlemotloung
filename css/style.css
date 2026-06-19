@@ -2,73 +2,88 @@
   CSS RESET + VARIABLES ( CLEAN START)
                                       */
 :root {
-  --primary: #ffb6c1;
-  --secondary: #8b4513;
-  --background: #fffaf5;
-  --text: #333;
-  --white: #ffffff;
+    --primary: #ffb6c1;
+    --secondary: #8b4513;
+    --background: #fffaf5;
+    --text: #333;
+    --white: #ffffff;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
+
 /*
    BASE STYLE ( REQUIRED BY RUBRIC)   
                                     */
 body {
     font-family: Arial, sans-serif;
-    font-size: 1rem; /* responsive unit */
+    font-size: 1rem;
+    /* responsive unit */
     line-height: 1.6;
     background-color: var(--background);
     color: var(--text);
-} 
+}
+
 /*
    TYPOGRAPHY (RUBRIC SECTION)
-                              */ 
-h1, h2, h3 {
+                              */
+h1,
+h2,
+h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin-bottom: 1rem;
-}     
+}
+
 p {
     margin-bottom: 1rem;
-}                         
+}
+
 /*
    HEADER + NAVIGATION (FLEXBOX)
                                  */
 header {
     background-color: var(--primary);
     padding: 1rem;
-}      
+}
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 2rem;
-}  
+}
+
 nav a {
     text-decoration: none;
     color: var(--secondary);
     font-weight: bold;
     transition: 0.3s;
-}   
+}
+
 /* PSEUDO-CLASSES (VERY IMPORTANT) */
 nav a:hover {
     color: var(--secondary);
 }
+
 nav a:focus {
     outline: 2px solid black;
 }
+
 nav a:active {
     color: red;
 }
+
 /*
    MAIN LAYOUT
                */
 main {
     padding: 2rem;
-}  
+}
+
 /* BUTTONS (INTERACTIVE)
                         */
 button {
@@ -78,38 +93,45 @@ button {
     border: none;
     cursor: pointer;
     transition: 0.3s;
-}  
+}
+
 button:hover {
     background-color: black;
-}    
+}
+
 /*PRODUCTS (GRID SYSTEM)  
                         */
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-}    
+}
+
 .product-card {
     background-color: var(--white);
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s, border 0.3s;
     border: 1px solid transparent;
-}  
+}
+
 .product-card:hover {
     transform: translateY(-5px);
     border-color: var(--secondary);
 }
+
 /* Headings*/
-.product-card h2{
+.product-card h2 {
     color: var(--secondary);
-} 
+}
+
 /* Price */
 .product-card strong {
     color: var(--primary);
 }
+
 .product-card img {
     width: 100%;
     max-width: 300px;
@@ -119,8 +141,9 @@ button:hover {
     display: block;
     margin: 0 auto;
 }
+
 /* Enquiry link */
-.product-card a{ 
+.product-card a {
     display: inline-block;
     margin-top: 10px;
     padding: 0.5rem 1rem;
@@ -129,7 +152,8 @@ button:hover {
     border-radius: 5px;
     text-decoration: underline;
     transition: 0.3s;
-}    
+}
+
 /*
    GALLERY (GRID)
            */
@@ -137,11 +161,13 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-}  
+}
+
 .gallery img {
     width: 100%;
     border-radius: 6px;
-}    
+}
+
 /*
    CONTACT
            */
@@ -150,7 +176,8 @@ address {
     background-color: var(--white);
     padding: 1rem;
     border-radius: 6px;
-}    
+}
+
 /*
    FOOTER
           */
@@ -159,37 +186,41 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-} 
+}
+
 /*
    RESPONSIVE DESIGN (CRITICAL)
                                */
 /* TABLET*/
 @media (max-width: 768px) {
-nav ul {
-    flex-direction: column;
-    align-items: center;
-     gap: 1rem;
- } 
-.products {
-    grid-template-columns: repeat(2, 1fr);
- }   
-.gallery {
-    grid-template-columns: repeat(2, 1fr);
- } 
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
 /* MOBILE */
 @media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
-  }
+    .products {
+        grid-template-columns: 1fr;
+    }
 
-  .gallery {
-    grid-template-columns: 1fr;
-  }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 
-  h1 {
-    font-size: 1.5rem;
-  }
+    h1 {
+        font-size: 1.5rem;
+    }
 }
 
 /* RESPONSIVE IMAGES (REQUIRED)
@@ -197,4 +228,21 @@ nav ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background: #f1f1f1;
 }
