@@ -60,15 +60,80 @@ Purpose: Allow customers to enquire about bakery products
       <label for="message">Your Message:</label><br>
       <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
       <button type="submit">Submit Enquiry</button>
-    </form>
-    <!-- Privacy Note -->
-    <p>Your information will be kept private and only used to respond to your enquiry</p>
-  </main>
 
-  <footer>
-    <p>&copy; 2026 Baked With Love By Reo</p>
-    <address>40 Kellner Street, Westdene Bloemfontein</address>
-  </footer>
+</html>
+</form>
+<!-- Privacy Note -->
+<p>Your information will be kept private and only used to respond to your enquiry</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ</title>
+
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 15px;
+      background: pink;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 10px;
+      background: #eee;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <button class="faq-question">What do you sell?</button>
+  <div class="faq-answer">We sell cakes, cupcakes, donuts and milk tarts.</div>
+
+  <button class="faq-question">Where are you located?</button>
+  <div class="faq-answer">Bloemfontein, 40 Kellner Street.</div>
+
+  <button class="faq-question">Do you take custom orders?</button>
+  <div class="faq-answer">Yes, we do.</div>
+
+  <script>
+    const questions = document.querySelectorAll(".faq-question");
+
+    questions.forEach(function (q) {
+      q.addEventListener("click", function () {
+        const answer = this.nextElementSibling;
+
+        if (answer.style.display === "block") {
+          answer.style.display = "none";
+        } else {
+          answer.style.display = "block";
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
+</main>
+
+
+<footer>
+  <p>&copy; 2026 Baked With Love By Reo</p>
+  <address>40 Kellner Street, Westdene Bloemfontein</address>
+</footer>
 
 </body>
 

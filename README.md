@@ -15,19 +15,6 @@ The purpose of the website is to:
 * Provide business information
 * Allow customers to make enquiries online
 
-## Part 2: CSS Styling and Responsive Design
-In Part 2, the website was enhanced using CSS to improve the visual design, usability, and responsiveness.
-
-The following improvements were made:
-* Created and linked an external stylesheet (`style.css`) across all pages
-* Applied a consistent colour scheme (pink, brown, cream)
-* Improved typography using font styles, sizes, and spacing
-* Used **Flexbox** for navigation and layout alignment
-* Used **CSS Grid** for product and gallery layouts
-* Styled buttons, links, and sections for better user experience
-* Added hover and focus pseudo-classes for interactivity
-* Implemented responsive design using media queries for different screen sizes
-
 ## Responsive Evidence
 Screenshots were taken using Chrome DevTools device toolbar.
 
@@ -122,6 +109,7 @@ project-folder/
 - Fixed inconsistent products.html title tag
 - Added robots.txt and sitemap.xml
 - Corrected Responsive Evidence section to match the screenshots actually in the repo
+- Added a map
 
 ## Accessibility
 
